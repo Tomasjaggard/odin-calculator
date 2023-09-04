@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#calcBody{
+    padding-top: 20px;
+    padding: 10px 20px 0px 20px;
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    border-radius: 5%;
+}
+
+#screen{
+    font-size: 50px;
+    align-items: right;
+    display: flex;
+    justify-content: flex-end;
+    margin:auto;
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+
+#buttons-grid{
+    display:grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(5,75px);
+    gap:2px;
+    
+}
+
+#buttons-grid button{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}
+
+#buttons-grid .number:hover{
+    background-color: gainsboro;
+}
+
+#buttons-grid .delete{
+    background-color: lightcoral;
+}
+
+#buttons-grid .delete:hover{
+    background-color: red;
+}
+
+#buttons-grid .operator{
+    background-color: lightblue;
+}
+#buttons-grid .operator:hover{
+    background-color: aqua;
+}
+
+#buttons-grid .equals:hover{
+    background-color: bisque;
+}
+
+#add {
+    grid-row: span 2; /* Make the "Clear" button span 2 columns */
+}
+
