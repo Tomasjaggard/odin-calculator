@@ -76,7 +76,7 @@ function start(){
     //Equals
     buttonEquals.addEventListener('click',() => {
         if(firstNumber == '' || secondNumber == '' || action == '') return;
-        result = (Math.round(operate(firstNumber,secondNumber,action)*100000000)/100000000).toFixed(8)
+        result = (Math.round(operate(firstNumber,secondNumber,action)*100000000)/100000000)
         firstNumber = result
         secondNumber = ''
         action = '='
