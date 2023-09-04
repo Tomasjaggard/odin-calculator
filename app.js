@@ -62,6 +62,7 @@ function start(){
     //Operators
     buttonOperators.forEach(button => {
         button.addEventListener('click', () => {
+            if(firstNumber == '') return;
             action = button.textContent;
             if(action == 'X^'){
                 screenText.textContent = '';
