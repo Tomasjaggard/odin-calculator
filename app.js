@@ -62,6 +62,11 @@ function start(){
     //Operators
     buttonOperators.forEach(button => {
         button.addEventListener('click', () => {
+            if(secondNumber !== ''){
+                firstNumber = (Math.round(operate(firstNumber,secondNumber,action)*100000000)/100000000)
+                secondNumber = ''
+                screenText.textContent = firstNumber
+            }
             if(firstNumber == '') return;
             action = button.textContent;
             if(action == 'X^'){
